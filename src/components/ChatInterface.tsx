@@ -3,16 +3,14 @@ import { motion } from 'framer-motion';
 import { 
   Send, 
   Volume2, 
-  VolumeX, 
   Play, 
   Pause, 
   Loader2, 
   Copy, 
-  RotateCcw,
   Download,
   BookOpen
 } from 'lucide-react';
-import { Message, Language, AudioOptions } from '../types';
+import type { Message, Language, AudioOptions } from '../types';
 
 interface ChatInterfaceProps {
   messages: Message[];

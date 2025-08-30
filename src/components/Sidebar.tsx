@@ -4,13 +4,11 @@ import {
   Plus, 
   MessageSquare, 
   Languages, 
-  Settings, 
   Volume2, 
   MoreHorizontal,
-  Trash2,
-  Edit3
+  Trash2
 } from 'lucide-react';
-import { Conversation, Language } from '../types';
+import type { Conversation, Language } from '../types';
 import { LANGUAGES } from '../constants/languages';
 
 interface SidebarProps {
