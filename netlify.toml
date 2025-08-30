@@ -6,11 +6,13 @@
   publish = "dist"
   
   # Default build command
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
 [build.environment]
   # Set Node.js version
   NODE_VERSION = "18"
+  # Disable npm audit to speed up build
+  NPM_FLAGS = "--production=false"
 
 # Force all paths to be served with correct MIME types
 [[headers]]

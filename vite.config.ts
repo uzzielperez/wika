@@ -13,8 +13,12 @@ export default defineConfig({
         chunkFileNames: 'assets/[name].[hash].js',
         assetFileNames: 'assets/[name].[hash].[ext]'
       }
-    }
+    },
+    // Copy _redirects file to dist
+    copyPublicDir: true
   },
   // Ensure base path is set correctly for Netlify
-  base: './'
+  base: '/',
+  // Copy additional files
+  publicDir: 'public'
 })
